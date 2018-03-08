@@ -5,7 +5,8 @@ tower2.8301.internal
 tower3.8301.internal
 
 [database]
-appdb1.8301.internal
+support1.8301.internal
+support2.8301.internal
 
 [all:vars]
 admin_password=redhat
@@ -15,7 +16,7 @@ ansible_ssh_user=ec2-user
 ansible_ssh_private_key_file="~/.ssh/8301key.pem"
 ansible_ssh_common_args="-o StrictHostKeyChecking=no"
 
-pg_host=appdb1.8301.internal
+pg_host=support1.8301.internal
 pg_port='5432'
 
 pg_database='awx'
