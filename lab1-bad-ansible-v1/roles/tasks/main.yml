@@ -1,0 +1,6 @@
+---
+- name: setup load-balancer
+  hosts: frontends
+  become: yes
+  roles:
+    - {name: lb-    
